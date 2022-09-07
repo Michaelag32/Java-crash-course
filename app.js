@@ -76,3 +76,57 @@ let cents = dollars.map ((element) => {
 
 console.log (cents) --------------> long version checked */ 
 
+/* let dollars = [0, 10, 20] 
+
+let cents = []
+
+for (let i = 0; i < dollars.length; i++ ) {
+    cents.push (dollars[i] * 100)
+}
+
+console.log (cents) ----------- HOW TO MAP W/OUT USING MAP METHOD */
+
+
+/*let users = [
+    {
+        username : "michael", 
+        email : "mikelagg32@gmail.com",
+        password: 'Michael123', 
+        subscriptionStatus: 'Vip', 
+        discordId: 'michael001',
+        lessonsCompleted: [0, 1]
+    }
+]
+
+
+
+function register (name, email, password, 
+    subscriptionStatus, discordId, lessonsCompleted) {
+        let user = {
+            username: name,
+            email: email,
+            password: password, 
+            subscriptionStatus: subscriptionStatus,
+            discordId: discordId,
+            lessonsCompleted: lessonsCompleted
+        }
+        users.push (user);
+}
+
+register ('michael', 'mikelagg32@gmail.com', 'Michael123', 'Vip', 'michael001', [0, 1])
+
+console.log (users)*/
+
+//First way of accessing an element
+
+console.log(document.querySelector ('#title')) ;
+
+//Second way of accessing an element
+
+console.log(document.getElementById('title'));
+
+
+
+function changeTitleToRed () {
+    document.querySelector('h1').style.color = 'red'
+}
